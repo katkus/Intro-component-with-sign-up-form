@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: white;
+}
+
+@media (max-width: 23.5rem) {
+  body {
+    width: 23.5rem;
+    height: 62.5rem;
+    font-size: 0.96rem;
+  }
+}
+
+main {
+  width: 90rem;
+  height: 50rem;
+  min-height: 100vh;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-desktop.png);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 23.5rem) {
+  main {
+    background-image: url(./images/bg-intro-mobile.png);
+    width: 23.5rem;
+    height: 62.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.description {
+  width: 37.5rem;
+  height: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.5rem;
+  align-content: center;
+}
+
+@media (max-width: 23.5rem) {
+  .description {
+    width: 18.75rem;
+    height: 20rem;
+    padding: 0rem;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+@media (max-width: 23.5rem) {
+  h1 {
+    font-size: 1.625rem;
+    line-height: 1.3;
+  }
+}
+
+p {
+  padding-top: 1.875rem;
+  line-height: 1.6;
+}
+
+.information {
+  width: 40rem;
+  height: 43.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 23.5rem) {
+  .information {
+    width: 20rem;
+    height: 43.75rem;
+    padding: 3.75rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.proposition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.75rem;
+  height: 3.75em;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 0.4375rem;
+  justify-content: baseline;
+  box-shadow: 0rem 0.4375rem 0.1875rem 0rem rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 23.5rem) {
+  .proposition {
+    width: 20rem;
+    height: 5.625rem;
+    padding: 1.25rem 3.75rem;
+    display: inline-block;
+    line-height: 1.5625rem;
+
+  }
+}
+
+.information span {
+  font-weight: 600;
+}
+
+.paper {
+  width: 33.75rem;
+  height: 30.3125rem;
+  margin-top: 1.5625rem;
+  padding: 1.25rem 0rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.4375rem;
+  box-shadow: 0rem 0.5rem 0.1875rem 0rem rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 23.5rem) {
+  .paper {
+    width: 20rem;
+    height: 28.125rem;
+    justify-content: center;
+    padding-top: 0.625rem;
+    padding-bottom: 1.25rem;
+
+  }
+}
+
+.activePaper {
+  height: 35.625rem;
+  padding: 0.9375rem;
+}
+
+@media(max-width: 23.5rem) {
+  .activePaper {
+    height: 43.75rem;
+  }
+}
+
+input {
+  font-weight: 600;
+  width: 28.75rem;
+  height: 3.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.25rem 0rem;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 0.4375rem;
+  border: 0.125rem solid hsl(246, 25%, 77%);
+  color: hsl(249, 10%, 26%);
+}
+
+@media (max-width: 23.5rem) {
+  input {
+    width: 17.5rem;
+    border-radius: 0.1875rem;
+    border: 0.125rem solid hsl(246, 25%, 77%);
+    margin: 0.9375rem 0rem;
+
+  }
+}
+
+.activeInput {
+  margin-bottom: 0.3125rem;
+  padding: 0.625rem 1.5625rem;
+  border-color: red;
+}
+
+.inputGroup {
+  position: relative;
+}
+
+img {
+  position: absolute;
+  right: 0.625rem;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.hidden {
+  display: none;
+}
+
+input .hidden {
+  display: block;
+}
+
+input.error::placeholder {
+  color: red;
+  opacity: 1;
+}
+
+input:focus+img {
+  display: none;
+}
+
+.claim {
+  width: 28.75rem;
+  height: 3.75rem;
+  margin-bottom: 0.4375rem;
+  font-weight: 600;
+  color: white;
+  font-size: 0.96rem;
+  text-transform: uppercase;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 0.4375rem;
+  border: 0.125rem solid hsl(154, 59%, 37%);
+  border-bottom: 0.3125rem solid hsl(154, 95%, 39%);
+}
+
+@media (max-width: 23.5rem) {
+  .claim {
+    width: 17.5rem;
+    height: 3.75rem;
+    border-radius: 0.1875rem;
+  }
+}
+
+.claim:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.additionalDescription {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.7rem;
+}
+
+@media (max-width: 23.5rem) {
+  .additionalDescription {
+    width: 14.375rem;
+    font-size: 0.65rem;
+    line-height: 1.7;
+  }
+}
+
+.additionalDescription span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+.activeInputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: red;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+label {
+  color: red;
+  font-size: 0.70rem;
+  padding: 0rem;
+  margin: 0rem;
+  font-style: italic;
+}
