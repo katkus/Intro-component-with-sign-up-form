@@ -206,7 +206,6 @@ input {
 
 img {
   position: absolute;
-  right: 0.625rem;
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
