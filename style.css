@@ -150,7 +150,7 @@ p {
   .paper {
     width: 20rem;
     height: 28.125rem;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 0.625rem;
     padding-bottom: 1.25rem;
 
@@ -159,6 +159,8 @@ p {
 
 .activePaper {
   height: 35.625rem;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0.9375rem;
 }
 
@@ -212,10 +214,6 @@ img {
 
 .hidden {
   display: none;
-}
-
-input .hidden {
-  display: block;
 }
 
 input.error::placeholder {
